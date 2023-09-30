@@ -26,7 +26,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'django-insecure-=$fi0*!$=b4t!54p1+9p)ivy7u^dvpclkc9ir03%ka9$xzim9+'
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
-STATIC_URL = '/static/'
 # Following settings only make sense on production and may break development environments.
 
 
