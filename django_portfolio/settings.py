@@ -89,13 +89,12 @@ WSGI_APPLICATION = 'O'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgrespl_psycogpg2',
-    }
+    'default': dj_database_url.config(        
+    # Feel free to alter this value to suit your needs.        
+    default='postgresql://postgres:postgres@localhost:5432/mysite',        
+    conn_max_age=600    
+    )
 }
-
-DATABASES['default'] = dj_database_url.parse("postgresql://postgres:VT43voShYZ8v7cdih4Zw@containers-us-west-135.railway.app:5689/railway")
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
