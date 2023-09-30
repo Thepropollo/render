@@ -141,7 +141,7 @@ if not DEBUG:    # Tell Django to copy statics to the `staticfiles` directory
 
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "MEDIA")
+MEDIA_ROOT = BASE_DIR, "MEDIA"
 
 
 MEDIA_URL = 'MEDIA/'
