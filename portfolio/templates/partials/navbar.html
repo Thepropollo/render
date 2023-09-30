@@ -1,0 +1,19 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-black" style="background-color: #226fa7;">
+  <div class="container-fluid">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@800&display=swap" rel="stylesheet"> 
+    <a class="navbar-brand" style="font-family: 'Oswald', sans-serif; font-size: 24px" href="/">STEVEN BRIONES. Sites</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" style="font-family: 'Oswald', sans-serif; font-size: 24px" href="{% url 'blog:posts' %}">Blog</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <a class="btn btn-primary " style="background-color: #1c4059;  border-color: #2a6086; font-family: 'Oswald', sans-serif; font-size: 24px" href="{% static 'portfolio/Formulario.pdf' %}" target="_blank">Download CV</a>
+      </ul>
+    </div>
+  </div>
+</nav>
